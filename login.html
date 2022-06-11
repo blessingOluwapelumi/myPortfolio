@@ -6,25 +6,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login page</title>
+    <link rel="stylesheet" href="log-in.css">
 </head>
 
 <body>
 
 
-    <form action="">
+    <div class="header" id="stickyContent">
+        <nav>
+            <a href="indexHome.html"> <img src="images/logo-black.png" alt="Pelgit-logo" class="logo" width="100px"
+                    height="40px"></a>
+            <ul>
 
-        <label for=""> Email </label>
-         <input type="email" placeholder="Enter your email address">
+                <li> <a href="login.html" id="login">Login </a></li>
+            </ul>
 
-         <label for="">Password </label>
-         <input type="password">
-            <p class="forgot-pass">Forgot password?</p>
-        
-
-        <button type="button" class="submit">Sign In</button>
+            <!-- <img src="images/nav-bar.png" class="menuIcon" width="40px" height="30px"> -->
+        </nav>
+    </div>
 
 
-    </form>
+
+
+
+    <div class="main">
+
+  <h2>Welcome!</h2>
+        <!-- <h2>WELCOME BACK!</h2>-->
+        <p>LOGIN HERE</p>
+    </div>
+    
+  
+    <section class="login">
+
+        <div class="regContainer">
+            <form action="">
+
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="email">EMAIL ADDRESS</label>
+                    </div>
+
+                    <div class="col-75">
+                        <input type="email" id="email" size="30" placeholder="Enter your email address" required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="psw">PASSWORD</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+                    </div>
+                </div>
+
+               <a href="">Forgot password?</a> 
+
+            </form>
+
+
+
+            <button id="popupbtn" class="btn">Login </button>
+            <hr >
+           <p> Do not have an account? <a href="Registration.html">&nbsp; Create an account </a></p>
+            <div class="popup">
+                <div class="popcard">
+                    <h1>Thank You!</h1>
+                    <p>Registration successful.</p>
+
+                    <!-- <p>Thanks for messaging me, i assure to respond as soon as possible. 
+                      <br> You can as well reach me on +2347055022959 
+                      <br>Email: blessingoluwapelumi28@gmail.com</p>   -->
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
 
 </body>
 
