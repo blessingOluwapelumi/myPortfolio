@@ -152,7 +152,7 @@ nav ul li a:hover {
 
 
 
-.main h2{
+.main h2 {
     margin-top: 15%;
     text-align: center;
     color: var(--small-text-color);
@@ -161,7 +161,7 @@ nav ul li a:hover {
 
 }
 
-.main p{
+.main p {
     text-align: center;
     padding-left: 3rem;
 }
@@ -180,7 +180,7 @@ nav ul li a:hover {
     margin-left: 3%;
     line-height: 2rem;
     font-size: 14px;
- 
+
 
 }
 
@@ -229,9 +229,14 @@ form a {
 
 
 .btn:hover {
+
+
+    background-color: var(--bg2);
+    border: 2px solid var(--bg2);
     color: var(--secondary-color);
-    background-color: var(--gradient-box-w);
-    border: 2px solid var(--secondary-color);
+    /* font-weight: 400; */
+    box-shadow: var(--boxShadow);
+
 
 }
 
@@ -250,7 +255,7 @@ hr {
 .regContainer p {
     margin-top: 4%;
     line-height: 20px;
-   
+
 }
 
 .regContainer p a {
@@ -261,42 +266,44 @@ hr {
 
 
 
-.popup {
+
+
+#message {
     display: none;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.4);
+    color: var(--small-text-color);
+    position: relative;
+    /* padding: 20px; */
 }
 
-.popcard {
-    background-color: var(--bg2);
-    margin: 25% auto;
-    padding: 40px;
-    width: 40%;
-    text-align: center;
-    font-size: 1.2rem;
-    box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.316);
-    animation: popup 0.5s;
-    line-height: 30px;
+
+#message p {
+    /* padding: 10px 35px; */
+    font-size: 12px;
+    line-height: 10px;
 }
 
-#ph {
+#message h3 {
     font-size: 14px;
-    line-height: 20px;
-
+    color: var(--small-text-color);
+    font-weight: 400;
 }
 
-@keyframes popup {
-    from {
-        opacity: 0;
-    }
+.valid {
+    color: green;
+}
 
-    to {
-        opacity: 1;
-    }
+.valid:before {
+    position: relative;
+    /* left: -35px; */
+    /* content: "&#10004;"; */
+}
+
+.invalid {
+    color: red;
+}
+
+.invalid:before {
+    position: relative;
+    /* left: -35px; */
+    /* content: "&#10006;"; */
 }
